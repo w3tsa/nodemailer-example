@@ -14,7 +14,7 @@ app.post('/subscribe', (req, res) => {
     // res.json(req.body.email)
 
 async function main() {
-    var transporter = nodemailer.createTransport({
+    let transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
         secure: true, // use SSL
